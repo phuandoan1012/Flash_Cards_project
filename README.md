@@ -1,7 +1,7 @@
 # Project: Display Random Phrases/Flash Cards
 
-(Student name: Phu An Doan
-Student ID: 300311334)
+- Student name: Phu An Doan
+- Student ID: 300311334
 
 In this project, a Web application is created to display random quotes by famous people each time the button "Next Quote" is clicked. All quotes are selected carefully according to some criteria: they are all tasteful, positive and uncontroversial quotes.
 
