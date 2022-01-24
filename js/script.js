@@ -2,7 +2,7 @@
 *****************************************/
 
 /*** 
- * `quotes` array 
+ * `quotes` array: used to store all quote objects. 
 ***/
 quotes = [{
     quote: "The people who are crazy enough to think they can change the world are the ones who do.",
@@ -35,7 +35,7 @@ quotes = [{
 
 
 /***
- * `getRandomQuote` function
+ * `getRandomQuote` function: return a random quote object
 ***/
 function getRandomQuote() {
     // Generates a random number represented for the index of the selected random quote.
@@ -50,7 +50,7 @@ function getRandomQuote() {
 
 
 /***
- * `printQuote` function
+ * `printQuote` function: display the next random quote on the Web page.
 ***/
 function printQuote() {
     // calls the getRandomQuote() function
@@ -84,8 +84,8 @@ function printQuote() {
 
 
 /***
- * click event listener for the print quote button
- * The code will look like the following. You need to complete it.
+ * click event listener for the print quote button: when users click on the button of class 'load-quote' ("Next Quote" button, in other words),
+ * the function printQuote will be executed to display the next random quote.
 
 ***/
 
