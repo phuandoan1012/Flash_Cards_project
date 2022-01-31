@@ -32,7 +32,7 @@ quotes = [{
     citation: "Twitter",
     year: 2016
 }]
-
+oldRandom = -1;
 
 /***
  * `getRandomQuote` function: return a random quote object
@@ -40,6 +40,15 @@ quotes = [{
 function getRandomQuote() {
     // Generates a random number represented for the index of the selected random quote.
     let random = Math.floor(Math.random() * quotes.length);
+
+    // generate a new random if it is equal to the previous random number (to avoid duplicate quote)
+    while (random == oldRandom){
+        random = Math.floor(Math.random() * quotes.length);
+    }
+
+    // assign the new random number to oldRandom for checking next time
+    oldRandom = random;
+    console.log(oldRandom);
 
     // Grab a random object from the 'quotes' array, and store it in a variable
     let randomObj = quotes[random];
